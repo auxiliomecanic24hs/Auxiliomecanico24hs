@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Auxilio Mecánico 24hs - Auxilio, grúas, gomería, maquinaria pesada y repuestos las 24 horas.">
+<title>Auxilio Mecánico 24hs</title>
+<style>
+:root{--yellow:#ffd400;--black:#080808;--dark:#111;--gray:#bdbdbd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.94);backdrop-filter:blur(8px);border-bottom:1px solid #292929}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:1.15rem;font-weight:900;text-transform:uppercase;letter-spacing:.5px}
+.brand span{color:var(--yellow)}
+nav{display:flex;gap:20px;font-weight:700;font-size:.9rem}
+nav a:hover{color:var(--yellow)}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 0 70px;background:
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.86)),
+url("foto-1.jpg") center/cover}
+.badge{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);border-radius:999px;padding:8px 15px;font-weight:800;margin-bottom:20px}
+h1{font-size:clamp(2.5rem,8vw,5.6rem);line-height:.95;text-transform:uppercase;font-weight:1000}
+h1 span{color:var(--yellow)}
+.hero p{max-width:720px;margin:24px auto;color:#ddd;font-size:1.1rem}
+.buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn{padding:14px 22px;border-radius:10px;font-weight:900;display:inline-block}
+.btn-primary{background:var(--yellow);color:#000}
+.btn-secondary{border:1px solid #555;background:#151515}
+.btn:hover{transform:translateY(-2px)}
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:clamp(2rem,5vw,3.2rem);text-transform:uppercase}
+.section-title p{color:#aaa;margin-top:8px}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:#121212;border:1px solid #262626;border-radius:18px;padding:28px;transition:.2s}
+.card:hover{border-color:var(--yellow);transform:translateY(-3px)}
+.icon{font-size:2rem;margin-bottom:12px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{color:#aaa}
+.highlight{background:var(--yellow);color:#000;border-radius:22px;padding:42px;text-align:center}
+.highlight h2{font-size:clamp(2rem,5vw,3.5rem);text-transform:uppercase;line-height:1}
+.highlight p{margin:15px auto 22px;max-width:650px;font-weight:700}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gallery img{width:100%;height:430px;object-fit:cover;border-radius:18px;border:1px solid #292929}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-box{background:#121212;border:1px solid #292929;border-radius:18px;padding:30px}
+.contact-box h3{margin-bottom:16px;font-size:1.35rem}
+.phone{font-size:1.7rem;font-weight:900;color:var(--yellow);display:block;margin:8px 0}
+.small{color:#999;font-size:.95rem}
+footer{border-top:1px solid #292929;padding:28px 0;color:#888;text-align:center}
+@media(max-width:700px){
+ nav{display:none}
+ .services,.contact,.gallery{grid-template-columns:1fr}
+ .gallery img{height:330px}
+ .hero{min-height:75vh}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">Auxilio <span>Mecánico 24hs</span></div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="badge">365 DÍAS DEL AÑO</div>
+    <h1>Auxilio <span>Mecánico</span><br>24 horas</h1>
+    <p>Vamos hasta el lugar donde estés y buscamos la solución. Auxilio mecánico, grúas, gomería, maquinaria pesada y repuestos las 24 horas.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="https://wa.me/542954290751?text=Hola%2C%20necesito%20auxilio%20mec%C3%A1nico." target="_blank">WhatsApp 2954 290751</a>
+      <a class="btn btn-secondary" href="https://wa.me/542954398181?text=Hola%2C%20necesito%20auxilio%20mec%C3%A1nico." target="_blank">WhatsApp 2954 398181</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <div class="section-title">
+      <h2>Servicios</h2>
+      <p>Soluciones para autos, utilitarios, camiones y maquinaria.</p>
+    </div>
+    <div class="services">
+      <article class="card"><div class="icon">🔧</div><h3>Auxilio mecánico 24hs</h3><p>Asistencia mecánica cuando la necesitás, todos los días del año.</p></article>
+      <article class="card"><div class="icon">🚛</div><h3>Servicio de grúas</h3><p>Traslado y asistencia. Vamos hasta el lugar donde estés.</p></article>
+      <article class="card"><div class="icon">🛞</div><h3>Gomería</h3><p>Atención para neumáticos y soluciones relacionadas con rodados.</p></article>
+      <article class="card"><div class="icon">🏗️</div><h3>Maquinaria pesada</h3><p>Asistencia mecánica para vehículos y equipos de trabajo pesado.</p></article>
+      <article class="card"><div class="icon">⚡</div><h3>Electromecánica</h3><p>Diagnóstico y reparación de sistemas eléctricos y mecánicos.</p></article>
+      <article class="card"><div class="icon">📦</div><h3>Repuestos 24hs</h3><p>Conseguimos repuestos las 24 horas para ayudarte a resolver la urgencia.</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="highlight">
+      <h2>¿Te quedaste varado?</h2>
+      <p>No importa dónde estés. Comunicate y coordinamos la asistencia.</p>
+      <div class="buttons">
+        <a class="btn" style="background:#000;color:#fff" href="tel:+542954290751">Llamar 2954 290751</a>
+        <a class="btn" style="background:#000;color:#fff" href="tel:+542954398181">Llamar 2954 398181</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="container">
+    <div class="section-title">
+      <h2>Nuestros trabajos</h2>
+      <p>Imágenes reales del servicio y los vehículos.</p>
+    </div>
+    <div class="gallery">
+      <img src="foto-1.jpg" alt="Auxilio mecánico">
+      <img src="foto-2.jpg" alt="Vehículo atendido">
+      <img src="foto-3.jpg" alt="Trabajo mecánico">
+      <img src="foto-4.jpg" alt="Vehículo 4x4">
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contacto</h2>
+      <p>Atención y asistencia las 24 horas.</p>
+    </div>
+    <div class="contact">
+      <div class="contact-box">
+        <h3>📞 Comunicate ahora</h3>
+        <a class="phone" href="tel:+542954290751">2954 290751</a>
+        <a class="phone" href="tel:+542954398181">2954 398181</a>
+        <p class="small">También podés escribir por WhatsApp.</p>
+      </div>
+      <div class="contact-box">
+        <h3>📍 Ubicación</h3>
+        <p class="small">Santa Rosa, La Pampa</p>
+        <br>
+        <a class="btn btn-primary" href="https://maps.app.goo.gl/gs9cFud12equpwnj7" target="_blank">Ver ubicación en Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Auxilio Mecánico 24hs · Servicio 24 horas</div>
+</footer>
+</body>
+</html>
